@@ -1,4 +1,5 @@
-CREATE DATABASE IF NOT EXISTS petclinic;
+DROP DATABASE IF EXISTS petclinic;
+CREATE DATABASE petclinic DEFAULT CHARACTER SET utf8;
 GRANT ALL PRIVILEGES ON petclinic.* TO pc@localhost IDENTIFIED BY 'pc';
 
 USE petclinic;
